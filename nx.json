@@ -1,0 +1,30 @@
+{
+  "npmScope": "ng-easy",
+  "affected": { "defaultBase": "master" },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": { "scripts": "*", "dependencies": "*", "devDependencies": "*" },
+    "tsconfig.base.json": "*",
+    "tsconfig.base-node.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["browser", "server", "build", "test", "lint", "e2e", "favicons"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true,
+        "scan": true
+      }
+    }
+  },
+  "projects": {
+    "core-web-vitals": { "tags": [], "implicitDependencies": ["core-web-vitals"] },
+    "core-web-vitals-e2e": { "tags": [] },
+    "builders": { "tags": [] },
+    "eslint-config": { "tags": [], "implicitDependencies": ["builders"] }
+  },
+  "workspaceLayout": { "appsDir": "apps", "libsDir": "libs" }
+}

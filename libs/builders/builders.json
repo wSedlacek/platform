@@ -1,0 +1,19 @@
+{
+  "builders": {
+    "command": {
+      "implementation": "./src/command",
+      "schema": "./src/command/schema.json",
+      "description": "Runs any command line in the operating system."
+    },
+    "favicons": {
+      "implementation": "./src/favicons",
+      "schema": "./src/favicons/schema.json",
+      "description": "Generates the favicons for the web page."
+    },
+    "semantic-release": {
+      "implementation": "./src/semantic-release",
+      "schema": "./src/semantic-release/schema.json",
+      "description": "Performs a semantic release"
+    }
+  }
+}

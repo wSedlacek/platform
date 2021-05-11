@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*", "!**/*.json"],
+  "plugins": ["@nrwl/nx", "prettier", "json"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx", "*.json"],
+      "extends": ["plugin:prettier/recommended"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript", "plugin:@nrwl/nx/angular"]
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.json"],
+      "extends": ["plugin:json/recommended"],
+      "rules": {
+        "json/*": ["error", { "allowComments": true }]
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "breadcrumbs.enabled": true,
+
+  "editor.mouseWheelZoom": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.rulers": [140],
+  "editor.minimap.renderCharacters": false,
+  "editor.snippetSuggestions": "top",
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "Hack",
+
+  "explorer.confirmDragAndDrop": false,
+
+  "files.autoSave": "onWindowChange",
+  "files.eol": "\n",
+
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Monokai",
+
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "scss.lint.unknownAtRules": "ignore",
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  "html.format.wrapLineLength": 120,
+  "html.format.wrapAttributes": "auto",
+  "html.format.endWithNewline": true,
+
+  "prettier.jsxBracketSameLine": true,
+
+  "auto-rename-tag.activationOnLanguage": ["html", "xml"],
+  "auto-close-tag.activationOnLanguage": ["html", "xml"],
+
+  "material-icon-theme.showUpdateMessage": false,
+
+  "markdownlint.config": {
+    "default": true,
+    "MD033": false
+  },
+
+  "cSpell.ignorePaths": [
+    "node_modules",
+    "**/node_modules",
+    "**/node_modules/**",
+    "node_modules/**",
+    "vscode-extension",
+    ".git",
+    "*.dll",
+    "**/*.dll",
+    "package.json"
+  ],
+
+  "conventionalCommits.scopes": ["core-web-vitals", "core-web-vitals-e2e", "builders", "eslint-config", "*"]
+}

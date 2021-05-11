@@ -1,0 +1,15 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./dist/apps/core-web-vitals/browser"
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    },
+    "assert": {
+      "assertions": {
+        "uses-long-cache-ttl": "off"
+      }
+    }
+  }
+}

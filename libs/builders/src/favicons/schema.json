@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "properties": {
+    "browserTarget": {
+      "type": "string"
+    },
+    "favicon": {
+      "description": "The source favicon to be used. Preferably use a .svg file, if not .png is supported as well.",
+      "type": "string"
+    },
+    "background": {
+      "description": "Background color for the rendered icons. Can be changed depending on the configuration.",
+      "type": "string"
+    }
+  },
+  "required": ["browserTarget", "favicon"],
+  "additionalProperties": false
+}

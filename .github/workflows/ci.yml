@@ -1,0 +1,233 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  npm:
+    name: NPM
+    runs-on: ubuntu-latest
+    env:
+      NX_BRANCH: ${{ github.event.number }}
+      NX_BASE: ${{ github.event_name == 'pull_request' && 'remotes/origin/master' || github.event.before }}
+      NX_RUN_GROUP: ${{ github.run_id }}
+      NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.x
+
+      - name: Cache node_modules # This includes Ivy builds of angular libraries
+        id: cache-node-modules
+        uses: actions/cache@v2.1.5
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Cache NPM # Get a cache of packages for clean installs
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        uses: actions/cache@v2.1.5
+        with:
+          path: ~/.npm
+          key: |
+            npm-${{ hashFiles('**/package.json') }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            npm-${{ hashFiles('**/package.json') }}-${{ hashFiles('**/package-lock.json') }}
+            npm-${{ hashFiles('**/package.json') }}
+            npm-
+
+      - name: Install dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+  build:
+    name: Build
+    needs: [npm]
+    runs-on: ubuntu-latest
+    env:
+      NX_BRANCH: ${{ github.event.number }}
+      NX_BASE: ${{ github.event_name == 'pull_request' && 'remotes/origin/master' || github.event.before }}
+      NX_RUN_GROUP: ${{ github.run_id }}
+      NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.x
+
+      - name: Cache node_modules # This includes Ivy builds of angular libraries
+        id: cache-node-modules
+        uses: actions/cache@v2.1.5
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Cache Nx build
+        id: cache-nx-build
+        uses: actions/cache@v2.1.5
+        with:
+          path: node_modules/.cache/nx
+          key: nx-build-${{ hashFiles('**/package-lock.json') }}-${{ github.sha }}
+          restore-keys: |
+            nx-build-${{ hashFiles('**/package-lock.json') }}-${{ github.sha }}
+            nx-build-${{ hashFiles('**/package-lock.json') }}-
+
+      - name: Build
+        run: |
+          npm run build
+          npm run favicons
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          name: build-artifacts
+          path: dist
+
+  lint:
+    name: Lint
+    needs: [npm]
+    runs-on: ubuntu-latest
+    env:
+      NX_BRANCH: ${{ github.event.number }}
+      NX_BASE: ${{ github.event_name == 'pull_request' && 'remotes/origin/master' || github.event.before }}
+      NX_RUN_GROUP: ${{ github.run_id }}
+      NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch latest base branch
+        run: git fetch origin master
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.x
+
+      - name: Cache node_modules # This includes Ivy builds of angular libraries
+        id: cache-node-modules
+        uses: actions/cache@v2.1.5
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Cache Nx lint
+        id: cache-nx-lint
+        uses: actions/cache@v2.1.5
+        with:
+          path: node_modules/.cache/nx
+          key: nx-lint-${{ hashFiles('**/package-lock.json') }}-${{ github.sha }}
+          restore-keys: |
+            nx-lint-${{ hashFiles('**/package-lock.json') }}-${{ github.sha }}
+            nx-lint-${{ hashFiles('**/package-lock.json') }}-
+
+      - name: Lint
+        run: npm run ci:affected:lint
+
+  e2e:
+    name: e2e tests
+    needs: [npm, build]
+    runs-on: ubuntu-latest
+    env:
+      NX_BRANCH: ${{ github.event.number }}
+      NX_BASE: ${{ github.event_name == 'pull_request' && 'remotes/origin/master' || github.event.before }}
+      NX_RUN_GROUP: ${{ github.run_id }}
+      NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch latest base branch
+        run: git fetch origin master
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.x
+
+      - name: Cache node_modules # This includes Ivy builds of angular libraries
+        id: cache-node-modules
+        uses: actions/cache@v2.1.5
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Cache cypress
+        id: cache-cypress
+        uses: actions/cache@v2.1.5
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Cache Nx e2e
+        id: cache-nx-e2e
+        uses: actions/cache@v2.1.5
+        with:
+          path: node_modules/.cache/nx
+          key: nx-e2e-${{ hashFiles('**/package-lock.json') }}-${{ github.sha }}
+          restore-keys: |
+            nx-e2e-${{ hashFiles('**/package-lock.json') }}-${{ github.sha }}
+            nx-e2e-${{ hashFiles('**/package-lock.json') }}-
+
+      - name: Install cypress
+        if: steps.cache-cypress.outputs.cache-hit != 'true'
+        run: npx cypress install
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2.0.9
+        with:
+          name: build-artifacts
+          path: dist
+
+      - name: e2e tests
+        run: npm run ci:affected:e2e
+
+      - name: e2e test upload diffs
+        uses: actions/upload-artifact@v2.2.3
+        if: failure()
+        with:
+          name: visual-testing-diffs
+          path: dist/cypress/apps/core-web-vitals-e2e/snapshot-diffs
+          if-no-files-found: ignore
+
+  lighthouse:
+    name: Lighthouse audit
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }} # https://github.com/GoogleChrome/lighthouse-ci/issues/172
+          fetch-depth: 20 # https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/troubleshooting.md
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2.0.9
+        with:
+          name: build-artifacts
+          path: dist
+
+      - name: Lighthouse audit
+        uses: treosh/lighthouse-ci-action@7.0.0
+        with:
+          configPath: ./lighthouserc.json
+          runs: 3
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
