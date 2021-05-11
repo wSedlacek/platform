@@ -1,3 +1,15 @@
+# 1.0.0 (2021-05-11)
+
+
+### Bug Fixes
+
+* update client tooling ([c63f481](https://github.com/ng-easy/platform/commit/c63f481e5776c46da789a878dfd3f6cef68e2560))
+
+
+### Features
+
+* :tada: initial commit ([cd53f3d](https://github.com/ng-easy/platform/commit/cd53f3d573c1968f5b93089dabb6178593846c89))
+
 ## [2.2.1](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@2.2.0...@ng-easy/eslint-config@2.2.1) (2021-05-10)
 
 # [2.2.0](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@2.1.1...@ng-easy/eslint-config@2.2.0) (2021-05-10)
