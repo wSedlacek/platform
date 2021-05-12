@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.4.0...@ng-easy/builders@2.4.1) (2021-05-12)
+
+
+### Bug Fixes
+
+* **builders:** force version bump ([afe9d11](https://github.com/ng-easy/platform/commit/afe9d116857410adc16e80656664ec78cb0dac5b))
+
 # [2.4.0](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.3.1...@ng-easy/builders@2.4.0) (2021-05-12)
 
 
