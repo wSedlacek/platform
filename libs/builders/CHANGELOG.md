@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.3.1...@ng-easy/builders@2.4.0) (2021-05-12)
+
+
+### Features
+
+* **builders:** :lipstick: add package name to github comments ([#11](https://github.com/ng-easy/platform/issues/11)) ([6ee77e0](https://github.com/ng-easy/platform/commit/6ee77e0aee738dcf73d19e89539658ac7f7ee32c)), closes [#10](https://github.com/ng-easy/platform/issues/10)
+
 ## [2.3.1](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.3.0...@ng-easy/builders@2.3.1) (2021-05-12)
 
 
