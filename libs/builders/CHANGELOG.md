@@ -1,3 +1,10 @@
+## [2.12.1](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.12.0...@ng-easy/builders@2.12.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* **builders:** force version bump ([510ffb7](https://github.com/ng-easy/platform/commit/510ffb7330abb7af7d98a7f33da145682cd8df29))
+
 ## [2.6.1](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.6.0...@ng-easy/builders@2.6.1) (2021-06-18)
 
 
