@@ -22,7 +22,7 @@ function createGitConfig(pluginConfig: PluginConfig, context: Context): Options 
 
   return {
     assets,
-    message: `chore(release): ${pluginConfig.project}@\${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`,
+    message: `chore(release): :package: ${pluginConfig.project}@\${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`,
   };
 }
 

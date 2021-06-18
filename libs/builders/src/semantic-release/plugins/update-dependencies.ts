@@ -45,7 +45,7 @@ function createGitConfig(packageName: string, depProject: string, depPackageJson
 
   return {
     assets,
-    message: `fix(${depProject}): update ${packageName} to \${nextRelease.version} [skip ci]`,
+    message: `fix(${depProject}): :arrow_up: update ${packageName} to \${nextRelease.version} [skip ci]`,
   };
 }
 
