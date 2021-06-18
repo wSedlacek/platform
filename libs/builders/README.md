@@ -40,14 +40,21 @@ Additionaly, you can use the following options:
 - `force`: defaults to `false`, forces the release in a non CI environment, can be used to make a release locally
 - `mode`: can be either `independent` or `sync`, defaults to `independent`, choose whether you want to make individual versioning or group all under the same version
 
-### Force a new version
+### Bump major version
+
+```shell
+git commit -m "feat: :sparkles: bump major version" -m "BREAKING CHANGE New version"
+```
+
+### Force a specific version
 
 If you want to force a version bump not following semantic release run:
 
 ```shell
 git tag {packageName}@{newVersion} # Force a new higher base version
 git push --tags
-git commit -m "fix({project}): force version bump" --allow-empty # Force the semantic release process
+git commit -m "fix({project}): :arrow_up: force version bump" --allow-empty # Force the semantic release process
+git push
 ```
 
 And then do a release.
