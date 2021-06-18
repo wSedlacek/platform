@@ -5,7 +5,9 @@
   "keywords": [
     "angular",
     "builders",
-    "nx"
+    "nx",
+    "semantic-release",
+    "semrel"
   ],
   "author": "samuelfernandez",
   "homepage": "https://github.com/ng-easy/platform/tree/master/libs/builders",
