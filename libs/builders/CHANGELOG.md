@@ -1,3 +1,10 @@
+# [2.13.0](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.12.1...@ng-easy/builders@2.13.0) (2021-06-18)
+
+
+### Features
+
+* **builders:** :sparkles: use gitmoji for commit messages ([391cbe1](https://github.com/ng-easy/platform/commit/391cbe1d9a1a0df4101bffc47b36620a8898c01f))
+
 ## [2.12.1](https://github.com/ng-easy/platform/compare/@ng-easy/builders@2.12.0...@ng-easy/builders@2.12.1) (2021-06-18)
 
 
