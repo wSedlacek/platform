@@ -24,6 +24,9 @@
   },
   "license": "MIT",
   "peerDependencies": {
+    "@angular-eslint/eslint-plugin": "12.1.0",
+    "@angular-eslint/eslint-plugin-template": "12.1.0",
+    "@angular-eslint/template-parser": "12.1.0",
     "@typescript-eslint/parser": "^4.27.0",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "eslint": ">= 7.28.0",

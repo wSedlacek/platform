@@ -39,7 +39,7 @@
     },
     "eslint-config": {
       "tags": [],
-      "implicitDependencies": ["builders"]
+      "implicitDependencies": []
     }
   },
   "workspaceLayout": {
