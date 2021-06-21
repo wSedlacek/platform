@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.0...@ng-easy/eslint-config@3.1.1) (2021-06-21)
+
+
+### Bug Fixes
+
+* **eslint-config:** :pushpin: add missing peer dependencies ([155b3ee](https://github.com/ng-easy/platform/commit/155b3ee29a7861b2b12619098beb379756924c5f))
+
 # [3.1.0](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.0.0...@ng-easy/eslint-config@3.1.0) (2021-06-21)
 
 
