@@ -15,6 +15,7 @@
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
+  "projects": {},
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
@@ -24,22 +25,6 @@
         "showUsageWarnings": true,
         "scan": true
       }
-    }
-  },
-  "projects": {
-    "builders": {
-      "tags": []
-    },
-    "core-web-vitals": {
-      "tags": [],
-      "implicitDependencies": ["core-web-vitals"]
-    },
-    "core-web-vitals-e2e": {
-      "tags": []
-    },
-    "eslint-config": {
-      "tags": [],
-      "implicitDependencies": []
     }
   },
   "workspaceLayout": {
