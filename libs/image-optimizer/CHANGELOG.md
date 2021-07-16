@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.0.0...@ng-easy/image-optimizer@1.0.1) (2021-07-16)
+
+
+### Bug Fixes
+
+* **image-optimizer:** :package: update package.json to enable publish ([#93](https://github.com/ng-easy/platform/issues/93)) ([d78b7e1](https://github.com/ng-easy/platform/commit/d78b7e144309021d01a012fa5cfb8fb0d214021b))
+
 # 1.0.0 (2021-07-16)
 
 
