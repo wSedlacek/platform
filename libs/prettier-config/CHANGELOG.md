@@ -1,3 +1,14 @@
+## [1.0.1](https://github.com/ng-easy/platform/compare/@ng-easy/prettier-config@1.0.0...@ng-easy/prettier-config@1.0.1) (2021-07-16)
+
+
+### Bug Fixes
+
+* :package: update homepage to main branch ([5b513a7](https://github.com/ng-easy/platform/commit/5b513a75f7977cf47af1db777652ebbbaf46d211))
+* :arrow_up: update angular workspace to v12.1.2 ([5d8c45f](https://github.com/ng-easy/platform/commit/5d8c45ff3d0933948ef4ba55bfa03fc15eaf010d))
+* :arrow_up: update client tooling to ^4.28.2 ([73b8ee1](https://github.com/ng-easy/platform/commit/73b8ee173b950f573440f1fe54b26ad44f5d675d))
+* :arrow_up: update dependency eslint to v7.30.0 ([31b66ad](https://github.com/ng-easy/platform/commit/31b66ada3de4d25122c0d90e29c4c3159f0084e6))
+* :package: fix link to homepage in packages ([#94](https://github.com/ng-easy/platform/issues/94)) ([5870e4e](https://github.com/ng-easy/platform/commit/5870e4eb2dd9827aba0cb682f350980736dd5a6f))
+
 # 1.0.0 (2021-07-03)
 
 ### Bug Fixes
