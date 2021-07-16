@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.0.1...@ng-easy/image-optimizer@1.0.2) (2021-07-16)
+
+
+### Bug Fixes
+
+* :package: update homepage to main branch ([5b513a7](https://github.com/ng-easy/platform/commit/5b513a75f7977cf47af1db777652ebbbaf46d211))
+* :package: fix link to homepage in packages ([#94](https://github.com/ng-easy/platform/issues/94)) ([5870e4e](https://github.com/ng-easy/platform/commit/5870e4eb2dd9827aba0cb682f350980736dd5a6f))
+
 ## [1.0.1](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.0.0...@ng-easy/image-optimizer@1.0.1) (2021-07-16)
 
 
