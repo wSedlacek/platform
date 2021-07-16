@@ -1,3 +1,21 @@
+## [3.0.3](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.0.2...@ng-easy/builders@3.0.3) (2021-07-16)
+
+
+### Bug Fixes
+
+* :package: update homepage to main branch ([5b513a7](https://github.com/ng-easy/platform/commit/5b513a75f7977cf47af1db777652ebbbaf46d211))
+* :arrow_up: update angular workspace ([3c10d6a](https://github.com/ng-easy/platform/commit/3c10d6a9dbeacf8163d0d7df4da57e3914a7863e))
+* :arrow_up: update angular workspace to v12.1.0 ([5029c26](https://github.com/ng-easy/platform/commit/5029c26c8e448213884b681c68e571be4986d8e9))
+* :arrow_up: update angular workspace to v12.1.2 ([5d8c45f](https://github.com/ng-easy/platform/commit/5d8c45ff3d0933948ef4ba55bfa03fc15eaf010d))
+* :arrow_up: update client tooling ([2f80f76](https://github.com/ng-easy/platform/commit/2f80f7615495d5041b1836ae79a9145c996870b1))
+* :arrow_up: update client tooling to ^4.28.2 ([73b8ee1](https://github.com/ng-easy/platform/commit/73b8ee173b950f573440f1fe54b26ad44f5d675d))
+* :arrow_up: update dependency eslint to v7.30.0 ([31b66ad](https://github.com/ng-easy/platform/commit/31b66ada3de4d25122c0d90e29c4c3159f0084e6))
+* :arrow_up: update dependency eslint-plugin-unused-imports to ^1.1.2 ([425111a](https://github.com/ng-easy/platform/commit/425111a2440b1f6caf4b1a70ef2d2250c319024e))
+* :arrow_up: update dependency prettier to ^2.3.2 ([30237e7](https://github.com/ng-easy/platform/commit/30237e7ecadb298b1ccdeec0da40cdd38d6a2e14))
+* :arrow_up: update dependency svgo to ^2.3.1 ([fef6141](https://github.com/ng-easy/platform/commit/fef614161c14f9caa2d1ced0942d4cd985c06e85))
+* :arrow_up: update dependency tailwindcss to ^2.2.4 ([24026ee](https://github.com/ng-easy/platform/commit/24026ee85efbebfb36cfd29e0d585817b9654920))
+* :package: fix link to homepage in packages ([#94](https://github.com/ng-easy/platform/issues/94)) ([5870e4e](https://github.com/ng-easy/platform/commit/5870e4eb2dd9827aba0cb682f350980736dd5a6f))
+
 ## [3.0.2](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.0.1...@ng-easy/builders@3.0.2) (2021-06-21)
 
 ### Bug Fixes
