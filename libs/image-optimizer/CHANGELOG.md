@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.0.2...@ng-easy/image-optimizer@1.1.0) (2021-07-16)
+
+
+### Features
+
+* **image-optimizer:** :sparkles: filesystem cache ([#95](https://github.com/ng-easy/platform/issues/95)) ([4ee7d2a](https://github.com/ng-easy/platform/commit/4ee7d2a90527de2392e01ddace853b445cfe9113))
+
 ## [1.0.2](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.0.1...@ng-easy/image-optimizer@1.0.2) (2021-07-16)
 
 
