@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.1.0...@ng-easy/image-optimizer@1.1.1) (2021-07-16)
+
+
+### Bug Fixes
+
+* **image-optimizer:** :memo: update readme ([dcfb876](https://github.com/ng-easy/platform/commit/dcfb876def5e1ae84643c8a8e3bc5afbf85d4b45))
+
 # [1.1.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.0.2...@ng-easy/image-optimizer@1.1.0) (2021-07-16)
 
 
