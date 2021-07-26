@@ -1,3 +1,18 @@
+# [1.3.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.2.0...@ng-easy/image-optimizer@1.3.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* :arrow_up: update dependency @ngrx/component-store to v12.3.0 ([03f1305](https://github.com/ng-easy/platform/commit/03f130508a4846ca59ab12e4302e598044f17395))
+* :arrow_up: update dependency eslint-plugin-jsdoc to ^35.5.1 ([49b4cbf](https://github.com/ng-easy/platform/commit/49b4cbf4934a2f969d69a1f593c9c472119f8d19))
+* :arrow_up: update dependency eslint-plugin-jsdoc to v36 ([#114](https://github.com/ng-easy/platform/issues/114)) ([5af79b7](https://github.com/ng-easy/platform/commit/5af79b71810690176fa4f58b649e3684e04e85a5))
+
+
+### Features
+
+* **image-optimizer:** :sparkles: add additional configs ([#101](https://github.com/ng-easy/platform/issues/101)) ([148bc86](https://github.com/ng-easy/platform/commit/148bc86c534f4664f9bfa80fdbbc2875be51b91f))
+* **image-optimizer:** :sparkles: add config models and default values ([#100](https://github.com/ng-easy/platform/issues/100)) ([aa10173](https://github.com/ng-easy/platform/commit/aa10173afeaf1cd75247f55f4d30b017027451b1))
+
 # [1.2.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.1.1...@ng-easy/image-optimizer@1.2.0) (2021-07-19)
 
 
