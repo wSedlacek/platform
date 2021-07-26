@@ -1,3 +1,17 @@
+# [3.2.0](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.1.0...@ng-easy/builders@3.2.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* :arrow_up: update dependency @ngrx/component-store to v12.3.0 ([03f1305](https://github.com/ng-easy/platform/commit/03f130508a4846ca59ab12e4302e598044f17395))
+* :arrow_up: update dependency eslint-plugin-jsdoc to ^35.5.1 ([49b4cbf](https://github.com/ng-easy/platform/commit/49b4cbf4934a2f969d69a1f593c9c472119f8d19))
+* :arrow_up: update dependency eslint-plugin-jsdoc to v36 ([#114](https://github.com/ng-easy/platform/issues/114)) ([5af79b7](https://github.com/ng-easy/platform/commit/5af79b71810690176fa4f58b649e3684e04e85a5))
+
+
+### Features
+
+* **builders:** :sparkles: generate optimized images according to config ([#102](https://github.com/ng-easy/platform/issues/102)) ([7a91686](https://github.com/ng-easy/platform/commit/7a9168662899498920ded1005a719e69114fe231))
+
 # [3.1.0](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.0.3...@ng-easy/builders@3.1.0) (2021-07-19)
 
 
