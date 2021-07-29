@@ -1,3 +1,15 @@
+## [1.0.2](https://github.com/ng-easy/platform/compare/@ng-easy/prettier-config@1.0.1...@ng-easy/prettier-config@1.0.2) (2021-07-29)
+
+
+### Bug Fixes
+
+* :memo: add links to Nx and Angular websites ([#124](https://github.com/ng-easy/platform/issues/124)) ([bc1d5fd](https://github.com/ng-easy/platform/commit/bc1d5fdccfa774e79c72dc05c14e8b8f699b1941))
+* update readme ([84a6e4a](https://github.com/ng-easy/platform/commit/84a6e4ae07afbc64f946aa8b78022a9f34bc7eaf))
+* :arrow_up: update dependency @ngrx/component-store to v12.3.0 ([03f1305](https://github.com/ng-easy/platform/commit/03f130508a4846ca59ab12e4302e598044f17395))
+* :arrow_up: update dependency eslint-plugin-jsdoc to ^35.5.1 ([49b4cbf](https://github.com/ng-easy/platform/commit/49b4cbf4934a2f969d69a1f593c9c472119f8d19))
+* :arrow_up: update dependency eslint-plugin-jsdoc to v36 ([#114](https://github.com/ng-easy/platform/issues/114)) ([5af79b7](https://github.com/ng-easy/platform/commit/5af79b71810690176fa4f58b649e3684e04e85a5))
+* :memo: update readme to clarify compatibility with Nx workspaces ([#123](https://github.com/ng-easy/platform/issues/123)) ([2afdd57](https://github.com/ng-easy/platform/commit/2afdd577300f4dbf2ddccd9ea82b06b095b1a083))
+
 ## [1.0.1](https://github.com/ng-easy/platform/compare/@ng-easy/prettier-config@1.0.0...@ng-easy/prettier-config@1.0.1) (2021-07-16)
 
 
