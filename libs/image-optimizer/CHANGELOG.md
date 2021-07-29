@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.3.0...@ng-easy/image-optimizer@1.3.1) (2021-07-29)
+
+
+### Bug Fixes
+
+* :memo: add links to Nx and Angular websites ([#124](https://github.com/ng-easy/platform/issues/124)) ([bc1d5fd](https://github.com/ng-easy/platform/commit/bc1d5fdccfa774e79c72dc05c14e8b8f699b1941))
+* update readme ([84a6e4a](https://github.com/ng-easy/platform/commit/84a6e4ae07afbc64f946aa8b78022a9f34bc7eaf))
+* :memo: update readme to clarify compatibility with Nx workspaces ([#123](https://github.com/ng-easy/platform/issues/123)) ([2afdd57](https://github.com/ng-easy/platform/commit/2afdd577300f4dbf2ddccd9ea82b06b095b1a083))
+
 # [1.3.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.2.0...@ng-easy/image-optimizer@1.3.0) (2021-07-26)
 
 
