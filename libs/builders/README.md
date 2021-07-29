@@ -69,6 +69,52 @@ Additionally, you can use the following options:
 - `force`: defaults to `false`, forces the release in a non CI environment, can be used to make a release locally
 - `mode`: can be either `independent` or `sync`, defaults to `independent`, choose whether you want to make individual versioning or group all under the same version
 
+### How to use `independent` mode
+
+With this mode each releasable library will have its own version according to [semver](https://semver.org/). This is the preferred approach.
+
+[Conventional commits](https://www.conventionalcommits.org/) follow the pattern `<type>[(optional scope)]: <description>`. When the builder is configured in `independent` mode, only the following commits will considered that apply for the individual project:
+
+- Those without scope or scope equal to `*`
+- Those where the scope is equal to the project name
+
+Example of `angular.json`/`workspace.json`:
+
+```json
+{
+  "projects": {
+    "library": {
+      // Only commits like "feat: new feature", "feat(*): new feature" or "feat(library): new feature" will be considered
+      "targets": {
+        "build": {
+          /* */
+        },
+        "release": {
+          "builder": "@ng-easy/builders:semantic-release"
+        }
+      }
+    }
+  }
+}
+```
+
+### How to use `sync` mode
+
+With this mode each all libraries will have the same version.
+
+Just use these options:
+
+```json
+"release": {
+  "builder": "@ng-easy/builders:semantic-release",
+  "options": {
+    "mode": "sync"
+  }
+}
+```
+
+All commits will be considered for a potential version bump. Changelog will still be in each project, only containing the changes that apply to the specific library.
+
 ### Bump major version
 
 ```shell
