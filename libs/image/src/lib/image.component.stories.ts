@@ -8,25 +8,26 @@ export default {
   component: ImageComponent,
   decorators: [
     moduleMetadata({
-      imports: [ImageModule.forRoot()],
+      imports: [ImageModule.forRoot({})],
     }),
   ],
   parameters: {
     controls: {
-      exclude: ['sizeRatio', 'wrapperWidth', 'wrapperHeight', 'sizerPaddingTop', 'sizerSvg'],
+      exclude: ['sizeRatio', 'wrapperWidth', 'wrapperHeight', 'sizerPaddingTop', 'sizerSvg', 'imageSrc', 'imageSrcset', 'imageSizes'],
     },
   },
   args: {
-    src: 'https://assets.imgix.net/unsplash/bear.jpg?fit=min&h=500&w=900&fm=pjpg',
+    src: 'https://assets.imgix.net/unsplash/bear.jpg',
     alt: 'Bear',
-    width: 900,
-    height: 500,
+    width: 1080,
+    height: 720,
   },
   argTypes: {
     src: {},
     width: {},
     height: {},
     layout: { control: { type: 'select' }, table: { defaultValue: { summary: 'intrinsic' } } },
+    sizes: {},
     placeholder: { control: { type: 'select' }, table: { defaultValue: { summary: 'empty' } } },
     blurDataURL: {},
     unoptimized: { table: { defaultValue: { summary: false } } },
