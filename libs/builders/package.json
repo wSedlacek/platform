@@ -46,7 +46,8 @@
     "@angular-devkit/core": "^12.2.0",
     "@nrwl/workspace": "12.6.5",
     "prettier": "^2.3.2",
-    "rxjs": "~6.6.7"
+    "rxjs": "~6.6.7",
+    "@ng-easy/image-config": "^1.1.0"
   },
   "builders": "builders.json",
   "publishConfig": {
