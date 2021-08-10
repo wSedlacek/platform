@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.0.0...@ng-easy/image-config@1.1.0) (2021-08-10)
+
+
+### Features
+
+* **image-config:** :sparkles: move shared config to project ([#149](https://github.com/ng-easy/platform/issues/149)) ([a05e93d](https://github.com/ng-easy/platform/commit/a05e93d4020874d9accca7ffc77055c7e9fcc3db))
+
 # 1.0.0 (2021-08-09)
 
 
