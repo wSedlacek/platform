@@ -1,3 +1,15 @@
+## [3.2.3](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.2.2...@ng-easy/builders@3.2.3) (2021-08-10)
+
+
+### Bug Fixes
+
+* **builders:** :bug: calculation of dependent projects using project graph ([#147](https://github.com/ng-easy/platform/issues/147)) ([d0c9b03](https://github.com/ng-easy/platform/commit/d0c9b035f7f913f6c89b95aa776f8f03ca18f320))
+
+
+### Documentation
+
+* **builders:** :memo: update readme with explanation of dependencies ([#148](https://github.com/ng-easy/platform/issues/148)) ([c3ddba5](https://github.com/ng-easy/platform/commit/c3ddba5a34bd8c2911de613023d0557db35ff652))
+
 ## [3.2.2](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.2.1...@ng-easy/builders@3.2.2) (2021-08-10)
 
 
