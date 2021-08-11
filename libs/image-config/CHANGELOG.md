@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.1.0...@ng-easy/image-config@1.1.1) (2021-08-11)
+
+
+### Bug Fixes
+
+* :hammer: widen range of engines to major versions in package.json ([#151](https://github.com/ng-easy/platform/issues/151)) ([3bfe92e](https://github.com/ng-easy/platform/commit/3bfe92ec2c49030b0716cba5f76b4fa885fc7336))
+
 # [1.1.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.0.0...@ng-easy/image-config@1.1.0) (2021-08-10)
 
 
