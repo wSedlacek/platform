@@ -1,3 +1,13 @@
+## [3.1.5](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.4...@ng-easy/eslint-config@3.1.5) (2021-08-11)
+
+
+### Bug Fixes
+
+* :hammer: widen range of engines to major versions in package.json ([#151](https://github.com/ng-easy/platform/issues/151)) ([3bfe92e](https://github.com/ng-easy/platform/commit/3bfe92ec2c49030b0716cba5f76b4fa885fc7336))
+* :arrow_up: update client tooling ([1ba37ee](https://github.com/ng-easy/platform/commit/1ba37eeb8187966d1c257fd21f401127f9fb94e9))
+* :arrow_up: update client tooling ([4e22aef](https://github.com/ng-easy/platform/commit/4e22aeffdbba6851754ff80707090ac07f52db0e))
+* :arrow_up: update dependency eslint-plugin-json to ^3.1.0 ([10797d6](https://github.com/ng-easy/platform/commit/10797d62079a2523d2088b1b87007f5326f32f2a))
+
 ## [3.1.4](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.3...@ng-easy/eslint-config@3.1.4) (2021-07-29)
 
 
