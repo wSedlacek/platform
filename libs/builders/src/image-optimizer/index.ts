@@ -1,10 +1,15 @@
 import path from 'path';
 
 import { BuilderContext, BuilderOutput, createBuilder } from '@angular-devkit/architect';
-import { JsonObject } from '@angular-devkit/core';
 import fs from 'fs-extra';
 
-import { ImageFormat, ImageOptimizerConfig, defaultImageOptimizerConfig, dedupAndSortImageSizes } from '@ng-easy/image-config';
+import {
+  ImageFormat,
+  ImageOptimizerConfig,
+  defaultImageOptimizerConfig,
+  dedupAndSortImageSizes,
+  ImageQualityNetwork,
+} from '@ng-easy/image-config';
 import {
   FilesystemImageCache,
   getImageOptimizer,
@@ -13,18 +18,11 @@ import {
   getValidatedImageOptimizerConfig,
 } from '@ng-easy/image-optimizer';
 
-interface Options extends JsonObject {
-  assets: string[];
-  outputPath: string;
-  deviceSizes: number[];
-  imageSizes: number[];
-  quality: number | null;
-  formats: ImageFormat[];
-}
+import { ImageOptimizerConfigJson } from './options';
 
 export default createBuilder(imageOptimizerBuilder);
 
-export async function imageOptimizerBuilder(options: Options, context: BuilderContext): Promise<BuilderOutput> {
+export async function imageOptimizerBuilder(options: ImageOptimizerConfigJson, context: BuilderContext): Promise<BuilderOutput> {
   context.logger.info(`Optimizing assets from from:`);
   options.assets.forEach((asset) => context.logger.info(`- ${getRelativePath(asset)}`));
   context.logger.info(`To folder: ${getRelativePath(options.outputPath)}`);
@@ -36,7 +34,7 @@ export async function imageOptimizerBuilder(options: Options, context: BuilderCo
     quality: options.quality ?? defaultImageOptimizerConfig.quality,
     formats: options.formats.length === 0 ? defaultImageOptimizerConfig.formats : options.formats,
   });
-  const quality: number = optimizationConfig.quality;
+  const qualities: number[] = getQualities(optimizationConfig.quality);
   const imageSizes: number[] = dedupAndSortImageSizes([...optimizationConfig.deviceSizes, ...optimizationConfig.imageSizes]);
 
   for (const assetPath of options.assets) {
@@ -55,13 +53,23 @@ export async function imageOptimizerBuilder(options: Options, context: BuilderCo
 
       for (const width of imageSizes) {
         for (const format of formats) {
-          await imageOptimizer.optimize(filePath, file, { format, width, quality }, fileSystemCache);
+          for (const quality of qualities) {
+            await imageOptimizer.optimize(filePath, file, { format, width, quality }, fileSystemCache);
+          }
         }
       }
     }
   }
 
   return { success: true };
+}
+
+function getQualities(quality: number | ImageQualityNetwork): number[] {
+  if (typeof quality === 'number') {
+    return [quality];
+  }
+
+  return [quality['slow-2g'], quality['2g'], quality['3g'], quality['4g'], quality.default, quality.saveData];
 }
 
 function getRelativePath(absolutePath: string): string {
