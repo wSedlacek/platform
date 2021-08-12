@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.1.1...@ng-easy/image-config@1.2.0) (2021-08-12)
+
+
+### Bug Fixes
+
+* :arrow_up: update client tooling ([3ee1170](https://github.com/ng-easy/platform/commit/3ee1170a74f1d4885ba92541f7659fafe14d782a))
+
+
+### Features
+
+* **image-config:** :sparkles: configure quality according to network type ([#159](https://github.com/ng-easy/platform/issues/159)) ([fae0f46](https://github.com/ng-easy/platform/commit/fae0f46175b15c0a6ba770e6ab2d4179bc307f80))
+
 ## [1.1.1](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.1.0...@ng-easy/image-config@1.1.1) (2021-08-11)
 
 
