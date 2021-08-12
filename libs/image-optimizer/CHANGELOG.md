@@ -1,3 +1,11 @@
+## [1.3.4](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.3.3...@ng-easy/image-optimizer@1.3.4) (2021-08-12)
+
+
+### Bug Fixes
+
+* :arrow_up: update client tooling ([3ee1170](https://github.com/ng-easy/platform/commit/3ee1170a74f1d4885ba92541f7659fafe14d782a))
+* **image-optimizer:** :arrow_up: update @ng-easy/image-config to 1.2.0 [skip ci] ([b45ed78](https://github.com/ng-easy/platform/commit/b45ed78a130b95cada4b8dd3f99ff6a2b3775221))
+
 ## [1.3.3](https://github.com/ng-easy/platform/compare/@ng-easy/image-optimizer@1.3.2...@ng-easy/image-optimizer@1.3.3) (2021-08-11)
 
 
