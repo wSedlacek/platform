@@ -1,3 +1,13 @@
+## [3.2.7](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.2.6...@ng-easy/builders@3.2.7) (2021-08-14)
+
+
+### Bug Fixes
+
+* :arrow_up: update dependency svgo to ^2.4.0 ([79bd9dc](https://github.com/ng-easy/platform/commit/79bd9dc20645152aab23573c99d1abf037c70fbf))
+* **builders:** :arrow_up: update @ng-easy/image-config to 1.2.1 [skip ci] ([1b48e8b](https://github.com/ng-easy/platform/commit/1b48e8b0fba0733cbe076db84bf41e16660f6737))
+* **builders:** :arrow_up: update @ng-easy/image-optimizer to 1.3.5 [skip ci] ([59cae8f](https://github.com/ng-easy/platform/commit/59cae8fa6d2438473a6c2f0cc29dcc736621a8c3))
+* **builders:** :bug: consider deps scope for semantic release ([#168](https://github.com/ng-easy/platform/issues/168)) ([616a4cf](https://github.com/ng-easy/platform/commit/616a4cfc1300508d6fdf46a99fa8bea9c104afba))
+
 ## [3.2.6](https://github.com/ng-easy/platform/compare/@ng-easy/builders@3.2.5...@ng-easy/builders@3.2.6) (2021-08-12)
 
 
