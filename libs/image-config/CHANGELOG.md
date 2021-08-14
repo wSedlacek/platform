@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.2.0...@ng-easy/image-config@1.2.1) (2021-08-14)
+
+
+### Bug Fixes
+
+* :arrow_up: update dependency svgo to ^2.4.0 ([79bd9dc](https://github.com/ng-easy/platform/commit/79bd9dc20645152aab23573c99d1abf037c70fbf))
+
 # [1.2.0](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.1.1...@ng-easy/image-config@1.2.0) (2021-08-12)
 
 
