@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/ng-easy/platform/compare/@ng-easy/prettier-config@1.0.3...@ng-easy/prettier-config@1.0.4) (2021-08-16)
+
+
+### Bug Fixes
+
+* :arrow_up: update client tooling ([3ee1170](https://github.com/ng-easy/platform/commit/3ee1170a74f1d4885ba92541f7659fafe14d782a))
+* :arrow_up: update dependency svgo to ^2.4.0 ([79bd9dc](https://github.com/ng-easy/platform/commit/79bd9dc20645152aab23573c99d1abf037c70fbf))
+
 ## [1.0.3](https://github.com/ng-easy/platform/compare/@ng-easy/prettier-config@1.0.2...@ng-easy/prettier-config@1.0.3) (2021-08-11)
 
 
