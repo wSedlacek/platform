@@ -1,3 +1,11 @@
+## [3.1.6](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.5...@ng-easy/eslint-config@3.1.6) (2021-08-16)
+
+
+### Bug Fixes
+
+* :arrow_up: update client tooling ([3ee1170](https://github.com/ng-easy/platform/commit/3ee1170a74f1d4885ba92541f7659fafe14d782a))
+* :arrow_up: update dependency svgo to ^2.4.0 ([79bd9dc](https://github.com/ng-easy/platform/commit/79bd9dc20645152aab23573c99d1abf037c70fbf))
+
 ## [3.1.5](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.4...@ng-easy/eslint-config@3.1.5) (2021-08-11)
 
 
