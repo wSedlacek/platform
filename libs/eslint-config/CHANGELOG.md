@@ -1,3 +1,11 @@
+## [3.1.7](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.6...@ng-easy/eslint-config@3.1.7) (2021-08-17)
+
+
+### Bug Fixes
+
+* :arrow_up: update client tooling to ^4.29.2 ([5d6f4a1](https://github.com/ng-easy/platform/commit/5d6f4a1c9052600616a8d7281e740464d478ade0))
+* :arrow_up: update dependency semantic-release to ^17.4.5 ([f1b4555](https://github.com/ng-easy/platform/commit/f1b455594755df65a76e3f6d8049b081a5d4e716))
+
 ## [3.1.6](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.5...@ng-easy/eslint-config@3.1.6) (2021-08-16)
 
 
