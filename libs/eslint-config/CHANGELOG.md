@@ -1,3 +1,11 @@
+## [3.1.8](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.7...@ng-easy/eslint-config@3.1.8) (2021-08-18)
+
+
+### Bug Fixes
+
+* :arrow_up: update dependency @nrwl/workspace to v12.7.2 ([60175be](https://github.com/ng-easy/platform/commit/60175be39420ea8f55a171b540aee40b0fd77858))
+* :arrow_up: update dependency eslint-plugin-unused-imports to ^1.1.4 ([802c404](https://github.com/ng-easy/platform/commit/802c40435f95b2a80beb552e5dce6da4ab6ad21c))
+
 ## [3.1.7](https://github.com/ng-easy/platform/compare/@ng-easy/eslint-config@3.1.6...@ng-easy/eslint-config@3.1.7) (2021-08-17)
 
 
