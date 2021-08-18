@@ -1,3 +1,11 @@
+## [1.2.3](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.2.2...@ng-easy/image-config@1.2.3) (2021-08-18)
+
+
+### Bug Fixes
+
+* :arrow_up: update dependency @nrwl/workspace to v12.7.2 ([60175be](https://github.com/ng-easy/platform/commit/60175be39420ea8f55a171b540aee40b0fd77858))
+* :arrow_up: update dependency eslint-plugin-unused-imports to ^1.1.4 ([802c404](https://github.com/ng-easy/platform/commit/802c40435f95b2a80beb552e5dce6da4ab6ad21c))
+
 ## [1.2.2](https://github.com/ng-easy/platform/compare/@ng-easy/image-config@1.2.1...@ng-easy/image-config@1.2.2) (2021-08-17)
 
 
